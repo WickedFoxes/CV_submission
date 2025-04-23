@@ -42,7 +42,6 @@ def train_model(ex_dict):
         hsv_v = ex_dict.get('hsv_v', 0.0),
         degrees = ex_dict.get('degrees', 0.0),
         scale = ex_dict.get('scale', 0.0),
-        mosaic = ex_dict.get('mosaic', 0.0),
         translate = ex_dict.get('translate', 0.0),
         shear = ex_dict.get('shear', 0.0),
     )
