@@ -8,7 +8,7 @@ from PIL import Image
 from datetime import datetime
 from models import YOLOv8n
 
-def submission_1_2023110214(yaml_path, output_json_path):
+def submission_1_20191807(yaml_path, output_json_path):
     ###### can be modified (Only Hyperparameters, which can be modified in demo) ######
     data_config = load_yaml_config(yaml_path)
     model_name = 'models/yolov8c'
@@ -25,11 +25,10 @@ def submission_1_2023110214(yaml_path, output_json_path):
     ex_dict['hsv_v'] = 0.4     # 밝기 변화 (Value)
     ex_dict['degrees'] = 10.0  # 최대 ±10도 회전
     ex_dict['scale'] = 0.5     # 50% 축소 ~ 150% 확대
-    ex_dict['mosaic'] = 0.5    # Mosaic 25% 확률
+    # ex_dict['mosaic'] = 0.5    # Mosaic 25% 확률
     ex_dict['translate']=0.1  # ±10% 범위로 이동
     ex_dict['shear']=2.0  # 최대 ±2도 비틀기
 
-    
     ###### can be modified (Only Models, which can't be modified in demo) ######
     from ultralytics import YOLO
     Experiments_Time = datetime.now().strftime("%y%m%d_%H%M%S")
