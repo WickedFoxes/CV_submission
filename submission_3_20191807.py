@@ -11,7 +11,7 @@ from models import YOLOv8n
 def submission_3_20191807(yaml_path, output_json_path):
     ###### can be modified (Only Hyperparameters, which can be modified in demo) ######
     data_config = load_yaml_config(yaml_path)
-    model_name = 'models/yolov12c'
+    model_name = 'models/yolov12n'
     ex_dict = {}
     epochs = 20
     batch_size = 16
@@ -25,7 +25,7 @@ def submission_3_20191807(yaml_path, output_json_path):
     ex_dict['hsv_v'] = 0.4     # 밝기 변화 (Value)
     ex_dict['degrees'] = 10.0  # 최대 ±10도 회전
     ex_dict['scale'] = 0.5     # 50% 축소 ~ 150% 확대
-    ex_dict['mosaic'] = 0.5    # Mosaic 25% 확률
+    # ex_dict['mosaic'] = 0.5    # Mosaic 25% 확률
     ex_dict['translate']=0.1  # ±10% 범위로 이동
     ex_dict['shear']=2.0  # 최대 ±2도 비틀기
     
