@@ -4,4 +4,4 @@
 
 ### submission_2_20191807.py : YOLOv11-nano
 
-### submission_3_20191807.py : YOLOv12-nano
+### submission_3_20191807.py : YOLOv12-nano (Proposed)
